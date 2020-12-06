@@ -1,0 +1,211 @@
+html body .rigth {
+    display: flex;
+    background-color:transparent;
+    width: 200px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html body .rigth:hover #image img {
+    transform: rotate(180deg);
+}
+
+html body .rigth #image {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20px;
+}
+
+html body .rigth #image img {
+    transition-duration: 600ms;
+    width: 15px;
+}
+
+#btn{
+    display: none;
+}
+
+#check:checked + div{
+    display: none;
+}
+
+html body .rigth .functions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     visibility: hidden;
+    opacity: 0;  */ 
+    background-color: #111119;
+    transition:visibility 0.3s linear, opacity 0.3s linear;
+    box-sizing: border-box;
+}
+
+html body .rigth:hover .functions {
+    visibility: visible;
+    transition: visible 1ms;
+    height: auto; opacity: 1;
+}
+
+.logo {
+    width: 80%;
+    margin: 10px 0;
+    
+}
+
+/* TODOS OS BOTÕES */
+button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background-color: #5B75EE;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    transition-duration: 300ms;
+
+}
+
+button:hover {
+    color: yellow; 
+    background-color: black;
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    transition: all .3s;
+}
+
+button:active {
+    background-color: yellow;
+}
+
+hr {
+    width: 90%;
+    margin-top: 2px;
+}
+
+/* TODOS H3 E H4 */
+h3, h4 {
+    font-weight: bold;
+}
+
+/* Nome do projeto */
+.functions #nameProject {
+    color: white; 
+    margin-top: 8px;
+}
+
+/* botão add wallpaper */
+.functions #wallpaper {
+    color: white;
+    width: 80%;
+    height: 20px;
+    margin-top: 9px;
+    
+}
+
+/* botão add video */
+.functions #video {
+    color: white;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    
+    
+}
+
+/* Nome Funções */
+.functions #nameFunction {
+    color: white;
+    margin-top: 10px;
+}
+
+/* botão de substituições */
+.functions #substituitions{
+    color: white;
+    width: 80%;
+    margin-top: 10px;
+    
+}
+
+/* botão de cartões */
+.functions #cards{
+    color: white;  
+    width: 80%;
+    margin-top: 6px;
+    
+}
+
+/* Nome Cronômetro */
+.functions #nameCron{
+    color: white;  
+    margin-top: 10px;
+}
+
+/* botão de exibir cronômetro */
+.functions #labelCron{
+    color: white;  
+    width: 80%;
+    margin-top: 10px;
+}
+
+/* Div dos controles do cronometro */
+.controlerCron {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* botão iniciar */
+.functions .controlerCron #start{
+    color: white;  
+    width: 45%;
+    height: 20px;
+    margin-top: 13px;
+    
+}
+
+/* botão pausar */
+.functions .controlerCron #pause{
+    color: white;  
+    width: 45%;
+    height: 20px;
+    margin-top: 13px;
+    
+}
+
+/* botão reiniciar */
+.functions #reset{
+    color: white;   
+    width: 80%;
+    height: 20px;
+    margin-top: 6px;
+}
+/* Linha do h6 version */
+.functions #lineVersion {
+    margin-top: 14px;
+}
+
+/* Nome da versão */
+.functions #versionNumber{
+    color: #808080;  
+    margin-top: 5px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#imgUploaded{
+    display: none;
+}
+
+#videoUploaded{
+    display: none;
+}
+
+
+
+
+

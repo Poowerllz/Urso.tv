@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    width: 840px;
+    height: 352px;
+    background-color: black;
+}
+
+html body {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}

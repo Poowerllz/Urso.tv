@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="public/styles/preview.css">
+        <link rel="stylesheet" href="public/styles/function.css">
+        <link rel="stylesheet" href="public/styles/global.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="left" id="left">
+        <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+                <source src="" type="video/mp4" id="videoSource">
+            </video> 
+
+        </section>
+        <section class="rigth">
+            <label id="image" for="btn"><img src="public/assets/arrow.png" alt=""></label>
+            <input type="checkbox" name="image" id="btn">
+            <!-- ABA DAS FUNCTIONS -->
+            <div class="functions">
+                <img class="logo" src="https://urso.tv/wp-content/uploads/2020/01/200px32-novo.png">
+                <hr width="80%">
+
+                <button name="wallpaper" id="wallpaper" onclick="addwall()">Add wallpaper</button>
+                <input type="file" id="imgUploaded"/>
+
+                <button name="video" id="video" onclick="addvideo()">Add video</button>
+                <input type="file" id="videoUploaded"/>
+
+                <h4 id="nameFunction">Funções</h4>
+                <hr width="80%">
+
+                <button name="substituitions" id="substituitions">Substituições</button>
+                <button name="cards" id="cards">Cartões</button>
+
+                <h4 id="nameCron">Cronômetro</h4>
+                <hr width="80%">
+
+                <button name="labelCron" id="labelCron">Cronômetro</button>
+
+                <div class="controlerCron">
+                    <button name="start" id="start">Iniciar</button>
+                    <button name="pause" id="pause">Pausar</button>
+                </div>
+                <button name="reset" id="reset">Reiniciar</button>
+                <hr id="lineVersion" width="80%">
+                <h6 id="versionNumber">version - 1.0.0</h6>
+
+            </div>
+        </section>
+    </body>
+    <script src="public/scripts/preview.js"></script>
+</html>
