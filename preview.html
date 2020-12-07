@@ -13,44 +13,54 @@
     </head>
     <body>
         <section class="left" id="left">
-        <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+            <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
                 <source src="" type="video/mp4" id="videoSource">
-            </video> 
+            </video>
 
         </section>
         <section class="rigth">
-            <label id="image" for="btn"><img src="public/assets/arrow.png" alt=""></label>
+            <label id="image" for="btn"><img src="public/assets/icons/arrow.png" alt=""></label>
             <input type="checkbox" name="image" id="btn">
             <!-- ABA DAS FUNCTIONS -->
             <div class="functions">
-                <img class="logo" src="https://urso.tv/wp-content/uploads/2020/01/200px32-novo.png">
+                <a onclick="Index();" class="logo"><img id="logo" src="https://urso.tv/wp-content/uploads/2020/01/200px32-novo.png"></a>
                 <hr width="80%">
+                <div class="contentIndex" id="contentIndex">
+                    <button name="wallpaper" id="wallpaper" onclick="addwall()">Add wallpaper</button>
+                    <input type="file" id="imgUploaded"/>
 
-                <button name="wallpaper" id="wallpaper" onclick="addwall()">Add wallpaper</button>
-                <input type="file" id="imgUploaded"/>
+                    <div class="controlerVideo">
+                        <button name="video" id="video" onclick="addvideo()">Add video</button>
+                        <button name="PausePlay" id="PausePlay" onclick="PausePlay()">
+                            <img class="Icons" id="Icon" src="public/assets/icons/play.svg" alt="">
+                        </button>
 
-                <button name="video" id="video" onclick="addvideo()">Add video</button>
-                <input type="file" id="videoUploaded"/>
+                        <button name="Restart" id="Restart" onclick="Restart()">
+                            <img class="Icons" id="IconR" src="public/assets/icons/update.gif" alt="">
+                        </button>
+                    </div>
 
-                <h4 id="nameFunction">Funções</h4>
-                <hr width="80%">
+                    <input type="file" id="videoUploaded"/>
 
-                <button name="substituitions" id="substituitions">Substituições</button>
-                <button name="cards" id="cards">Cartões</button>
+                    <h4 id="nameFunction">Funções</h4>
+                    <hr width="80%">
 
-                <h4 id="nameCron">Cronômetro</h4>
-                <hr width="80%">
+                    <button name="substituitions" id="substituitions" onclick="openBox()">Substituições</button>
+                    <button name="cards" id="cards">Cartões</button>
 
-                <button name="labelCron" id="labelCron">Cronômetro</button>
+                    <h4 id="nameCron">Cronômetro</h4>
+                    <hr width="80%">
 
-                <div class="controlerCron">
-                    <button name="start" id="start">Iniciar</button>
-                    <button name="pause" id="pause">Pausar</button>
+                    <button name="labelCron" id="labelCron">Cronômetro</button>
+
+                    <div class="controlerCron">
+                        <button name="start" id="start">Iniciar</button>
+                        <button name="pause" id="pause">Pausar</button>
+                    </div>
+                    <button name="reset" id="reset">Reiniciar</button>
+                    <hr id="lineVersion" width="80%">
+                    <h6 id="versionNumber">version - 1.0.0</h6>
                 </div>
-                <button name="reset" id="reset">Reiniciar</button>
-                <hr id="lineVersion" width="80%">
-                <h6 id="versionNumber">version - 1.0.0</h6>
-
             </div>
         </section>
     </body>

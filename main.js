@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
 let win = null
 
 app.once('ready', () => {
@@ -24,4 +24,4 @@ app.once('ready', () => {
 
     app.whenReady().then(openWindow);
     console.log("Aplicacao rodando")
-})
+});
